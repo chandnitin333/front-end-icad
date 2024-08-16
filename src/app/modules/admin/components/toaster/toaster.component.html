@@ -1,0 +1,15 @@
+<div class="toaster position-fixed top-4 end-0 px-3 py-2 m-16">
+    @for (toast of currentToasts; track toast; let i = $index) {
+      <div>
+        <app-toast
+          [type]="toast.type"
+          [title]="toast.title"
+          [message]="toast.message"
+          (disposeEvent)="dispose(i)"
+        ></app-toast>
+      </div>
+     
+    }
+  </div>
+
+ 

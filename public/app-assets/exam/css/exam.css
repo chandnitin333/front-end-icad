@@ -1,0 +1,50 @@
+.question-selection-box {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+}
+
+
+/*
+img {
+    height: 50px !important;
+    width: 91px !important;
+}
+*/
+
+.question-selection-box {
+    background-color: #ffffff;
+}
+
+.exam-tab {
+    /* background-color: #ebebeb !important; */
+}
+
+.exceed {
+    position: absolute;
+    top: -28px;
+    width: 100px;
+    left: 18px;
+    color: red;
+    padding: 2px;
+    color: red;
+    text-align: center;
+
+    border: 1px solid #000;
+    font-weight: 800;
+    box-shadow: 1px 2px #ccc;
+}
+
+.select-cnt {
+    position: absolute;
+    top: -27px;
+    width: 26px;
+    left: 15px;
+    padding: 2px;
+    color: red;
+    text-align: center;
+    border-radius: 18px;
+    border: 2px solid #000;
+    font-weight: 800;
+    box-shadow: 1px 2px #ccc;
+}

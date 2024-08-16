@@ -1,0 +1,614 @@
+<div
+  class="main-menu menu-fixed menu-dark menu-accordion menu-shadow bg-amber bg-darken-3"
+  data-scroll-to-active="true">
+  <div class="main-menu-content">
+    <ul class="navigation navigation-main bg-amber bg-darken-3"
+      id="main-menu-navigation" data-menu="menu-navigation">
+      <li id="dashboard" class="nav-item"><a class="nav-link" href="dashboard">
+          <i class="feather icon-bell"></i>
+          <span data-i18n="Dashboard">Dashboard</span></a>
+      </li>
+
+      <li class="nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-layers"></i><span data-i18n="Master Setup"
+            class="menu-title">Master Setup</span></a>
+        <ul class="menu-content">
+          <li>
+            <a class="menu-item" href="#"
+              data-i18n="Allocation Master">Allocation Master</a>
+            <ul class="menu-content">
+              <li id="course_subject_allocations">
+                <a class="menu-item" href="/course-subject-allocation"
+                  data-i18n="Course Subject Allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Course Subject Allocation">Course Subject
+                  Allocation</a>
+              </li>
+              <li id="student_topic_allocations">
+                <a class="menu-item" href="student_topic_allocations"
+                  data-i18n="Student Topic Allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Student Topic Allocation">Student Topic
+                  Allocation</a>
+              </li>
+              <li id="student_exam_allocations">
+                <a class="menu-item" href="student_exam_allocations"
+                  data-i18n="Student Exam allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Student Exam allocation">Student Exam
+                  allocation</a>
+              </li>
+              <li id="sb_student_topic_allocations">
+                <a class="menu-item" href="sb_student_topic_allocations"
+                  data-i18n="SB Student Topic Allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="SB Student Topic Allocation">SB Student
+                  Topic Allocation</a>
+              </li>
+              <li id="teacher_batch_allocations">
+                <a class="menu-item" href="teacher_batch_allocations"
+                  data-i18n="Faculty Batch Allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Faculty Batch Allocation">Faculty Batch
+                  Allocation</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="menu-item" href="#" data-i18n="SB Master">SB Master</a>
+            <ul class="menu-content">
+              <li id="sb_exams">
+                <a class="menu-item" href="sb_exams"
+                  data-i18n="SB Exam Master">SB Exam Master</a>
+              </li>
+              <li id="sb_topics">
+                <a class="menu-item" href="sb_topics"
+                  data-i18n="SB Topic Master">SB Topic Master</a>
+              </li>
+              <li id="sb_exam_marks">
+                <a class="menu-item" href="sb_exam_marks"
+                  data-i18n="SB Exam Marks">SB Exam Marks</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="menu-item" href="#" data-i18n="Locations">Locations</a>
+            <ul class="menu-content">
+              <li id="states">
+                <a class="menu-item" href="states"
+                  data-i18n="State Master">State Master</a>
+              </li>
+              <li id="districts">
+                <a class="menu-item" href="districts"
+                  data-i18n="District Master">District Master</a>
+              </li>
+              <li id="cities">
+                <a class="menu-item" href="cities" data-i18n="City Master">City
+                  Master</a>
+              </li>
+              <li id="centers">
+                <a class="menu-item" href="centers"
+                  data-i18n="Center Master">Center Master</a>
+              </li>
+              <li id="batches">
+                <a class="menu-item" href="batches"
+                  data-i18n="Batch Master">Batch Master</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="menu-item" href="#" data-i18n="Academics">Academics</a>
+            <ul class="menu-content">
+              <li id="streams">
+                <a class="menu-item" href="streams"
+                  data-i18n="Stream Master">Stream Master</a>
+              </li>
+              <li id="courses">
+                <a class="menu-item" href="courses"
+                  data-i18n="Course Master">Course Master</a>
+              </li>
+              <li id="subjectMst">
+                <a class="menu-item" href="subjects"
+                  data-i18n="Subject Master">Subject Master</a></li>
+
+              <li id="topics">
+                <a class="menu-item" href="topics"
+                  data-i18n="Topic Master">Topic Master</a>
+              </li>
+              <li id="sub_topic">
+                <a class="menu-item" href="sub_topic"
+                  data-i18n="Sub Topic Master">Sub Topic Master</a>
+              </li>
+              <li id="concepts">
+                <a class="menu-item" href="concepts"
+                  data-i18n="Admission Courses">Concept</a>
+              </li>
+              <li id="subconcepts">
+                <a class="menu-item" href="subconcepts"
+                  data-i18n="Admission Courses">Sub Concept</a>
+              </li>
+              <li id="lectures">
+                <a class="menu-item" href="lectures"
+                  data-i18n="Lecture Master">Lecture Master</a></li>
+              <li id="lecture_details">
+                <a class="menu-item" href="lecture_details"
+                  data-i18n="Lecture Details">Lecture Details</a>
+              </li>
+              <li id="steps">
+                <a class="menu-item" href="steps" data-i18n="Step Master">Step
+                  Master</a>
+              </li>
+              <li id="admission_courses">
+                <a class="menu-item" href="admission_courses"
+                  data-i18n="Admission Courses">Admission Courses</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a class="menu-item" href="#" data-i18n="Exam Setup">Exam
+              Setup</a>
+            <ul class="menu-content">
+              <li id="exam_categories">
+                <a class="menu-item" href="exam_categories"
+                  data-i18n="Exam Categories">Exam Categories</a>
+              </li>
+              <li id="exam_schemes">
+                <a class="menu-item" href="exam_schemes"
+                  data-i18n="Exam Schemes">Exam Schemes</a>
+              </li>
+              <li id="exam_weightages">
+                <a class="menu-item" href="exam_weightages"
+                  data-i18n="Exam Weighage">Exam Weightage</a>
+              </li>
+              <li id="exam_syllabus">
+                <a class="menu-item" href="exam_syllabus"
+                  data-i18n="Exam Syllabus">Exam Syllabus</a>
+              </li>
+              <li id="exams">
+                <a class="menu-item" href="exams" data-i18n="Exams Master">Exams
+                  Master</a>
+              </li>
+              <li id="exam_marks">
+                <a class="menu-item" href="exam_marks"
+                  data-i18n="Exam Marks">Exam Marks</a>
+              </li>
+              <li id="exam_syllabus_allocations">
+                <a class="menu-item" href="exam_syllabus_allocations"
+                  data-i18n="Exam Syllabus Allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Exam Syllabus Allocation">Exam Syllabus
+                  Allocation</a>
+              </li>
+            </ul>
+          </li>
+
+          <li id="caste_categories">
+            <a class="menu-item" href="caste_categories"
+              data-i18n="Caste Categories">Caste Categories</a>
+          </li>
+          <li id="asset_spaces">
+            <a class="menu-item" href="asset_spaces"
+              data-i18n="Manage Asset">Manage Asset</a>
+          </li>
+          <li id="self_analysis_reason">
+            <a class="menu-item" href="self_analysis_reason"
+              data-i18n="Self Analysis Reason" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Self Analysis Reason">Self Analysis
+              Reason</a>
+          </li>
+
+        </ul>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-user-plus"></i><span class="menu-title"
+            data-i18n="User Entry">User Entry</span></a>
+        <ul class="menu-content">
+          <li id="students">
+            <a class="menu-item" href="students"
+              data-i18n="Students">Students</a>
+          </li>
+          <li id="parents">
+            <a class="menu-item" href="parents" data-i18n="Parents">Parents</a>
+          </li>
+          <li id="teachers">
+            <a class="menu-item" href="teachers"
+              data-i18n="Faculty">Faculties</a>
+          </li>
+          <li id="system_users">
+            <a class="menu-item" href="system_users"
+              data-i18n="System Users">System Users</a>
+          </li>
+        </ul>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-check-circle"></i><span class="menu-title"
+            data-i18n="Checking">Checking</span></a>
+        <ul class="menu-content">
+          <li><a class="menu-item" href="#" data-i18n="Master">Master</a>
+            <ul class="menu-content">
+              <li id="quality_notes">
+                <a class="menu-item" href="quality_notes"
+                  data-i18n="Quality of notes">Quality of notes</a>
+              </li>
+              <li id="accuracy_works">
+                <a class="menu-item" href="accuracy_works"
+                  data-i18n="Accuracy of work">Accuracy of work</a>
+              </li>
+              <li id="percent_solvings">
+                <a class="menu-item" href="percent_solvings"
+                  data-i18n="Percent of solving">Percent of solving</a>
+              </li>
+              <li id="quality_solvings">
+                <a class="menu-item" href="quality_solvings"
+                  data-i18n="Quality of solving">Quality of solving</a>
+              </li>
+
+            </ul>
+          </li>
+          <li id="notes_checking_details">
+            <a class="menu-item" href="notes_checking_details"
+              data-i18n="Notes Checking Detail">Notes Checking</a>
+          </li>
+          <li id="solving_checking_details">
+            <a class="menu-item" href="solving_checking_details"
+              data-i18n="Solving Checking Detail">Solving Checking</a>
+          </li>
+          <li id="rank_booster_solvings">
+            <a class="menu-item" href="rank_booster_solvings"
+              data-i18n="Rank Booster Report">Rank Booster Report</a>
+          </li>
+          <li id="test_report_details">
+            <a class="menu-item" href="test_report_details"
+              data-i18n="Test Report Details">Test Report Details</a>
+          </li>
+        </ul>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-plus-circle"></i><span class="menu-title"
+            data-i18n="Question Entry">Question Entry</span></a>
+        <ul class="menu-content">
+          <li id="questions">
+            <a class="menu-item" href="questions"
+              data-i18n="Questions">Questions</a>
+          </li>
+          <li id="sb_questions"><a class="menu-item" href="sb_questions"
+              data-i18n="SB Questions">SB Questions</a>
+          </li>
+        </ul>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-bar-chart-2"></i><span class="menu-title"
+            data-i18n="Reports">Reports</span></a>
+        <ul class="menu-content">
+          <li id="exam_wise_results">
+            <a class="menu-item" href="reports/exam_wise_results"
+              data-i18n="Exam Wise Results">Exam Wise Results</a>
+          </li>
+          <li id="performance_report">
+            <a class="menu-item" href="reports/performance_report"
+              data-i18n="Overall Performance Result" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Overall Performance Result">Overall
+              Performance Result</a>
+          </li>
+          <li id="complete_solving_report">
+            <a class="menu-item" href="reports/complete_solving_report"
+              data-i18n="Solving Reports">Solving Reports</a>
+          </li>
+          <li id="attendance_report">
+            <a class="menu-item" href="reports/attendance_report"
+              data-i18n="Attendance Reports">Attendance Reports</a>
+          </li>
+          <li id="teacher_lecture_report">
+            <a class="menu-item" href="reports/teacher_lecture_report"
+              data-i18n="Faculty Lecture Detail Reports" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Faculty Lecture Details Reports">Faculty
+              Lecture Details Reports</a>
+          </li>
+          <li id="test_scores">
+            <a class="menu-item" href="test_scores"
+              data-i18n="Student Performance">Student Performance</a>
+          </li>
+          <li id="recalculate_result">
+            <a class="menu-item" href="exams/recalculate_result"
+              data-i18n="Recalculate Results">Recalculate Results</a>
+          </li>
+
+        </ul>
+      </li>
+      <li id="reset_exams" class="nav-item">
+        <a href="exams/reset_exams"><i class="feather icon-bell"></i><span
+            data-i18n="Reset Exams">Reset Exams</span></a>
+      </li>
+      <li id="batch_mentors" class="nav-item">
+        <a href="batch_mentors"><i class="feather icon-bell"></i><span
+            data-i18n="Batch Mentors">Batch Mentors</span></a>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-monitor"></i><span class="menu-title"
+            data-i18n="Test Creation">Test Creation</span></a>
+        <ul class="menu-content">
+          <li id="exam_set_code">
+            <a class="menu-item" href="exam_set_code"
+              data-i18n="Questions">Exam Set Code</a>
+          </li>
+          <li id="question_dificulty_level">
+            <a class="menu-item" href="question_dificulty_level"
+              data-i18n="Question Dificulty Level" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Question Dificulty Level">Question Dificulty
+              Level</a>
+          </li>
+
+          <li id="ExamTemplate">
+            <a class="menu-item" href="ExamTemplate"
+              data-i18n="Create Exam Template">Create Templates</a>
+          </li>
+
+          <li id="DyanamicTest">
+            <a class="menu-item" href="DyanamicTest"
+              data-i18n="Create Exam Test"> Create Test </a>
+          </li>
+          <li id="new_questions">
+            <a class="menu-item" href="new_questions/question_list"
+              data-i18n="Add / Upload New Question" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Add / Upload New Question">Add / Upload New
+              Question</a>
+          </li>
+          <li id="TaggedQuestion">
+            <a class="menu-item" href="TaggedQuestion/bulkview"
+              data-i18n="Question Bank">Question Bank</a>
+          </li>
+          <li id="tagged_questions_chart">
+            <a class="menu-item" href="tagged_questions_chart"
+              data-i18n="Tagged Questions Chart" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Tagged Questions Chart">Tagged Questions
+              Chart</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="appointments" class="nav-item">
+        <a class="nav-link" href="appointments/requested"><i
+            class="feather icon-calendar"></i><span
+            data-i18n="Appointments">Appointments</span></a>
+      </li>
+      <!--<li class="nav-item"><a class="nav-link" href="feedbacks"><i
+                                      class="feather icon-thumbs-up"></i><span
+                                      data-i18n="Feedback">Feedback</span></a>
+
+              </li>-->
+      <li id="news" class="nav-item">
+        <a class="nav-link" href="news"><i
+            class="feather icon-file-text"></i><span
+            data-i18n="News">News</span></a>
+      </li>
+      <li id="notifications" class="nav-item">
+        <a class="nav-link" href="notifications"><i
+            class="feather icon-bell"></i><span
+            data-i18n="Notifications">Notifications</span></a>
+
+      </li>
+      <li id="noticeboard" class="nav-item">
+        <a class="nav-link" href="noticeboard"><i
+            class="feather icon-bell"></i><span
+            data-i18n="Noticeboard">Noticeboard</span></a>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-plus-circle"></i><span class="menu-title"
+            data-i18n="Question Entry">Question Entry</span></a>
+        <ul class="menu-content">
+          <li id="questions">
+            <a class="menu-item" href="questions"
+              data-i18n="Questions">Questions</a>
+          </li>
+          <li id="sb_questions"><a class="menu-item" href="sb_questions"
+              data-i18n="SB Questions">SB Questions</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-monitor"></i><span
+            data-i18n="Master Setup">Master Setup</span></a>
+        <ul class="menu-content">
+
+          <li id="lecture_details">
+            <a class="menu-item" href="lecture_details"
+              data-i18n="Lecture Details">Lecture Details</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-user-plus"></i><span class="menu-title"
+            data-i18n="Student Entry">Student Entry</span></a>
+        <ul class="menu-content">
+          <li id="students">
+            <a class="menu-item" href="students"
+              data-i18n="Students">Students</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-user-plus"></i><span class="menu-title"
+            data-i18n="Faculty">Faculty</span></a>
+        <ul class="menu-content">
+          <li id="teachers">
+            <a class="menu-item" href="teachers" data-i18n="Faculty">Faculty</a>
+          </li>
+          <li id="teacher_batch_allocations">
+            <a class="menu-item" href="teacher_batch_allocations"
+              data-i18n="Faculty Batch Allocation">Faculty Batch Allocation</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-layers"></i><span data-i18n="Master Setup"
+            class="menu-title">Master Setup</span></a>
+        <ul class="menu-content">
+          <li>
+            <a class="menu-item" href="#"
+              data-i18n="Allocation Master">Allocation Master</a>
+            <ul class="menu-content">
+
+              <li id="student_exam_allocations">
+                <a class="menu-item" href="student_exam_allocations"
+                  data-i18n="Student Exam allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Student Exam allocation">Student Exam
+                  allocation</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li><a class="menu-item" href="#" data-i18n="Exam Setup">Exam
+              Setup</a>
+            <ul class="menu-content">
+              <li id="exam_categories">
+                <a class="menu-item" href="exam_categories"
+                  data-i18n="Exam Categories">Exam Categories</a>
+              </li>
+              <li id="exam_weightages">
+                <a class="menu-item" href="exam_weightages"
+                  data-i18n="Exam Weightage">Exam Weightage</a>
+              </li>
+              <li id="exam_syllabus">
+                <a class="menu-item" href="exam_syllabus"
+                  data-i18n="Exam Syllabus">Exam Syllabus</a>
+              </li>
+              <li id="exams">
+                <a class="menu-item" href="exams" data-i18n="Exams Master">Exams
+                  Master</a>
+              </li>
+              <li id="exam_marks">
+                <a class="menu-item" href="exam_marks"
+                  data-i18n="Exam Marks">Exam Marks</a>
+              </li>
+              <li id="exam_syllabus_allocations">
+                <a class="menu-item" href="exam_syllabus_allocations"
+                  data-i18n="Exam Syllabus Allocation" data-toggle="tooltip"
+                  data-placement="right" title
+                  data-original-title="Exam Syllabus Allocation">Exam Syllabus
+                  Allocation</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-plus-circle"></i><span class="menu-title"
+            data-i18n="Question Entry">Question Entry</span></a>
+        <ul class="menu-content">
+          <li id="questions">
+            <a class="menu-item" href="questions"
+              data-i18n="Questions">Questions</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-monitor"></i><span class="menu-title"
+            data-i18n="Test Creation">Test Creation</span></a>
+        <ul class="menu-content">
+
+          <li id="DyanamicTest">
+            <a class="menu-item" href="DyanamicTest"
+              data-i18n="Create Exam Test"> Create Test </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li id="dashboard" class="nav-item"><a class="nav-link" href="dashboard">
+          <i class="feather icon-bell"></i>
+          <span data-i18n="Dashboard">Dashboard</span></a>
+      </li>
+
+      <li class="nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-layers"></i><span data-i18n="Master Setup"
+            class="menu-title">Master Setup</span></a>
+        <ul class="menu-content">
+          <li id="topics">
+            <a class="menu-item" href="topics" data-i18n="Topic Master">Topic
+              Master</a>
+          </li>
+          <li id="sub_topic">
+            <a class="menu-item" href="sub_topic"
+              data-i18n="Sub Topic Master">Sub Topic Master</a>
+          </li>
+          <li id="concepts">
+            <a class="menu-item" href="concepts"
+              data-i18n="Admission Courses">Concept</a>
+          </li>
+          <li id="subconcepts">
+            <a class="menu-item" href="subconcepts"
+              data-i18n="Admission Courses">Sub Concept</a>
+          </li>
+        </ul>
+      </li>
+      <li class=" nav-item"><a href="javascript:void(0)"><i
+            class="feather icon-monitor"></i><span class="menu-title"
+            data-i18n="Test Creation">Test Creation</span></a>
+        <ul class="menu-content">
+          <li id="exam_set_code">
+            <a class="menu-item" href="exam_set_code"
+              data-i18n="Questions">Exam Set Code</a>
+          </li>
+          <li id="question_dificulty_level">
+            <a class="menu-item" href="question_dificulty_level"
+              data-i18n="Question Difficulty Level" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Question Difficulty Level">Question
+              Difficulty
+              Level</a>
+          </li>
+
+          <li id="ExamTemplate">
+            <a class="menu-item" href="ExamTemplate"
+              data-i18n="Create Exam Template">Create Templates</a>
+          </li>
+
+          <li id="DyanamicTest">
+            <a class="menu-item" href="DyanamicTest"
+              data-i18n="Create Exam Test"> Create Test </a>
+          </li>
+          <li id="new_questions">
+            <a class="menu-item" href="new_questions/question_list"
+              data-i18n="Add / Upload New Question" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Add / Upload New Question">Add / Upload New
+              Question</a>
+          </li>
+          <li id="TaggedQuestion">
+            <a class="menu-item" href="TaggedQuestion/bulkview"
+              data-i18n="Question Bank">Question Bank</a>
+          </li>
+          <li id="tagged_questions_chart">
+            <a class="menu-item" href="tagged_questions_chart"
+              data-i18n="Tagged Questions Chart" data-toggle="tooltip"
+              data-placement="right" title
+              data-original-title="Tagged Questions Chart">Tagged Questions
+              Chart</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="dashboard" class="nav-item"><a class="nav-link" href="#">
+          <i class="feather icon-bell"></i>
+          <span data-i18n="Dashboard">Dashboard</span></a>
+      </li>
+
+    </ul>
+  </div>
+
+</div>

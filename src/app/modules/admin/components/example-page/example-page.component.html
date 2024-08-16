@@ -1,0 +1,51 @@
+
+<app-modal (toggleModal)="onShowModal($event)" 
+[modelTitle]="modalTitle"
+[modalBody] ="modalBody"
+*ngIf="isOpen=='open'"
+></app-modal>
+<div class="card ">
+    <div class="card-header  text-dark text-bold-800 bg-amber bg-darken-4 p-1">
+        <strong style="font-size: 22px; color: white;">Topic Details</strong> 
+        <div class="float-right p-0">
+            <button class="btn btn-primary" (click)="showModal('open')"> Add</button>
+           
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row float-right">
+            <div class="form-group">
+                <div class="col-md-12 ">
+                <input type="text" placeholder="Search here"  class="form-control" 
+                [(ngModel)]="searchValue"   (keyup)="filterData($event)" />
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>TimeStamp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of paginatedItems let i = index">
+                <td>{{ getSerialNumber(i) }}</td> 
+                <td>{{ item.SB_TOPIC_NAME }}</td> 
+                <td>{{ item.STATUS }}</td> 
+                <td>{{ item.LAST_MODIFIED }}</td> 
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-1"><strong>Total Record : <span>{{totalItems}} </span></strong></div>
+          <app-pagination class="float-right"
+            [totalItems]="totalItems"
+            [itemsPerPage]="itemsPerPage"
+            (pageChange)="onPageChange($event)">
+          </app-pagination>
+    </div>
+  
+</div>
+

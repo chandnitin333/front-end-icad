@@ -1,0 +1,7 @@
+.alert{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top:7%;
+  width:80%;
+}

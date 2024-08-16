@@ -1,0 +1,127 @@
+
+<!-- BEGIN: Content-->
+<div class="app-content content">
+  <div class="content-overlay"></div>
+  <div class="content-wrapper">
+
+    <div class="content-body">
+      <!-- Basic form layout section start -->
+      <section id="basic-form-layouts">
+        <div class="row justify-content-md-center">
+          <div class="col-md-9">
+
+           
+
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title" id="basic-layout-card-center">Add
+                  Admission course</h4>
+                <a class="heading-elements-toggle"><i
+                    class="fa fa-ellipsis-v font-medium-3"></i></a>
+                <div class="heading-elements">
+
+                </div>
+              </div>
+              <div class="card-content collapse show">
+                <div class="card-body">
+
+                  <form class="form" id="add_technician" method="post"
+                    action="<?= site_url(); ?>admission_courses/save"
+                    novalidate>
+                    <div class="form-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="course_id">Course <span
+                                class="danger">*</span></label>
+                            <div class="controls">
+                              <select name="COURSE_ID" id="course_id"
+                                class="form-control" required
+                                data-validation-required-message="Please select Course!">
+                                <option value>Select Course</option>
+
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="admission_course_name">Admission Course
+                              <span class="danger">*</span></label>
+                            <div class="controls">
+                              <input type="text" id="admission_course_name"
+                                class="form-control"
+                                placeholder="Enter Admission Course"
+                                name="ADMISSION_COURSE_NAME" required
+                                data-validation-required-message="Please enter Admission Course!"
+                                value="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="description">Description
+                             </label>
+                            <div class="controls">
+                              <input type="text" id="description"
+                                class="form-control"
+                                placeholder="Enter Description"
+                                name="DESCRIPTION"
+                                value="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="remarks">Remarks</label>
+                            <div class="controls">
+                              <input type="text" id="remarks"
+                                class="form-control" placeholder="Remarks"
+                                name="REMARKS" value="">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="status">Status</label>
+                            <div class="controls">
+                              <select class="form-control" name="STATUS"
+                                id="status">
+                                <option value="ENABLE">Enable</option>
+                                <option value="DISABLE">Disable</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <input type="hidden" id="sequence" class="form-control"
+                          placeholder="Enter Sequence" name="SEQUENCE" min="0"
+                          value="">
+
+                      </div>
+                    </div>
+
+                    <div class="form-actions center">
+                      <a href="#" class="btn btn-warning mr-1">
+                        <i class="feather icon-x"></i> Cancel
+                      </a>
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-check-square-o"></i> Save
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // Basic form layout section end -->
+    </div>
+  </div>
+</div>
